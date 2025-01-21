@@ -4,10 +4,10 @@ import pyperclip  # For clipboard handling
 from groq import Groq
 
 client = Groq( 
-    api_key="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"
+    api_key="<your_api_key>"
 )
 
-def is_last_message_from_sender(chat_log,sender_name="Guddiya"):
+def is_last_message_from_sender(chat_log,sender_name="<sender_name>"):
     
     messages = chat_log.strip().split("/2025]")[-1]
     if sender_name in messages:
